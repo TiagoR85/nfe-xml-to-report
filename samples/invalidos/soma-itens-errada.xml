@@ -123,15 +123,15 @@
     </det>
     <total>
       <ICMSTot>
-        <vBC>560.00</vBC>
-        <vICMS>100.80</vICMS>
+        <vBC>550.00</vBC>
+        <vICMS>99.00</vICMS>
         <vICMSDeson>0.00</vICMSDeson>
         <vFCP>0.00</vFCP>
         <vBCST>0.00</vBCST>
         <vST>0.00</vST>
         <vFCPST>0.00</vFCPST>
         <vFCPSTRet>0.00</vFCPSTRet>
-        <vProd>560.00</vProd>
+        <vProd>550.00</vProd>
         <vFrete>0.00</vFrete>
         <vSeg>0.00</vSeg>
         <vDesc>0.00</vDesc>
@@ -141,7 +141,7 @@
         <vPIS>0.00</vPIS>
         <vCOFINS>0.00</vCOFINS>
         <vOutro>0.00</vOutro>
-        <vNF>560.00</vNF>
+        <vNF>550.00</vNF>
       </ICMSTot>
     </total>
     <transp>
@@ -151,13 +151,13 @@
       <dup>
         <nDup>001</nDup>
         <dVenc>2026-10-11</dVenc>
-        <vDup>560.00</vDup>
+        <vDup>550.00</vDup>
       </dup>
     </cobr>
     <pag>
       <detPag>
         <tPag>01</tPag>
-        <vPag>560.00</vPag>
+        <vPag>550.00</vPag>
       </detPag>
     </pag>
   </infNFe>

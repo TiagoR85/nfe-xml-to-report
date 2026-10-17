@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
-  <infNFe Id="NFe3526101122233300010550010000001231000000019" versao="4.00">
+  <infNFe Id="NFe35261011222333000101550010000001231000000018" versao="4.00">
     <ide>
       <cUF>35</cUF>
       <cNF>00000001</cNF>
@@ -14,7 +14,7 @@
       <cMunFG>3550308</cMunFG>
       <tpImp>1</tpImp>
       <tpEmis>1</tpEmis>
-      <cDV>9</cDV>
+      <cDV>8</cDV>
       <tpAmb>2</tpAmb>
       <finNFe>1</finNFe>
       <indFinal>0</indFinal>
@@ -23,7 +23,7 @@
       <verProc>nfe-xml-to-report</verProc>
     </ide>
     <emit>
-      <CNPJ>1122233300010</CNPJ>
+      <CNPJ>11222333000101</CNPJ>
       <xNome>EMPRESA FICTICIA COMERCIO LTDA</xNome>
       <xFant>FICTICIA COMERCIO</xFant>
       <enderEmit>
@@ -42,7 +42,7 @@
       <CRT>3</CRT>
     </emit>
     <dest>
-        <CNPJ>1122233300010</CNPJ>
+        <CNPJ>11222333000101</CNPJ>
       <xNome>DESTINATARIO FICTICIO LTDA</xNome>
       <enderDest>
         <xLgr>RUA DAS ACACIAS</xLgr>
@@ -165,7 +165,7 @@
     <SignedInfo>
       <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
       <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-      <Reference URI="#NFe3526101122233300010550010000001231000000019">
+      <Reference URI="#NFe35261011222333000101550010000001231000000018">
         <Transforms>
           <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
           <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
