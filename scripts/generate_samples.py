@@ -57,7 +57,7 @@ def montar_xml(
     dv = chave_dv_override or dv_modulo11_chave(chave_base)
     chave = chave_base + dv
 
-    v_prod_total = sum(float(i[7]) for i in itens) + vprod_item_extra
+    v_prod_total = sum(float(i[7]) for i in itens)
     v_nf = round(v_prod_total - v_desc + v_frete + v_outro + vnf_extra, 2)
 
     dets = []
