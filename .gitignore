@@ -10,3 +10,5 @@ obj/
 .pytest_cache/
 .ruff_cache/
 *.egg-info/
+coverage.*.xml
+coverage.json
