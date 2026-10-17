@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NFe [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <infNFe Id="NFe352610112223330001815500100000123000000001" versao="4.00">
+    <ide><cUF>&xxe;</cUF></ide>
+  </infNFe>
+</NFe>
