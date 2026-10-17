@@ -4,6 +4,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Exclude>[*]*NfeReportTool.Tests.*</Exclude>
+    <ExcludeByFile>**/Program.cs</ExcludeByFile>
   </PropertyGroup>
   <ItemGroup>
     <Using Include="Xunit" />

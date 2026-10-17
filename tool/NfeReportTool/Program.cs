@@ -1,6 +1,3 @@
-return Comando.Executar(args);
+using NfeReportTool;
 
-public static class Comando
-{
-    public static int Executar(string[] args) => 0;
-}
+return Comando.Executar(args);
