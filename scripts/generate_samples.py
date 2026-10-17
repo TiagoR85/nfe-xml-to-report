@@ -13,7 +13,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "cli"))
 
-from nfe_cli.dv import dv_cnpj, dv_cpf, dv_modulo11_chave  # noqa: E402
+from nfe_cli.dv import dv_cnpj, dv_cpf, dv_modulo11_chave
 
 VALIDOS = RAIZ / "samples" / "validos"
 INVALIDOS = RAIZ / "samples" / "invalidos"
@@ -264,9 +264,11 @@ def gerar() -> None:
         v_desc=10.0, v_frete=20.0, v_outro=5.0, dup_venc="2026-10-20"),
         encoding="utf-8")
 
-    base = dict(cuf="35", cnpj_base12="112223330001", serie=1, nnf=123, cnf=1,
-                dhemi="2026-10-01T10:00:00-03:00", cmun_fg="3550308", itens=ITENS_SP,
-                dup_venc="2026-10-11")
+    base = {
+        "cuf": "35", "cnpj_base12": "112223330001", "serie": 1, "nnf": 123, "cnf": 1,
+        "dhemi": "2026-10-01T10:00:00-03:00", "cmun_fg": "3550308", "itens": ITENS_SP,
+        "dup_venc": "2026-10-11",
+    }
     dv_bom = dv_modulo11_chave("352610112223330001815500100000123000000001")
     (INVALIDOS / "chave-dv-errado.xml").write_text(
         montar_xml(**base, chave_dv_override="0" if dv_bom != "0" else "1"), encoding="utf-8")
