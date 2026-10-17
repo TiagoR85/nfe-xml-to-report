@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="NfeReportTool.Tests/NfeReportTool.Tests.csproj" />
+  <Project Path="NfeReportTool/NfeReportTool.csproj" />
+</Solution>

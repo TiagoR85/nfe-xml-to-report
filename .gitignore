@@ -1,0 +1,11 @@
+.superpowers/
+__pycache__/
+*.pyc
+.venv/
+out/
+nupkg/
+bin/
+obj/
+*.nupkg
+.pytest_cache/
+.ruff_cache/
