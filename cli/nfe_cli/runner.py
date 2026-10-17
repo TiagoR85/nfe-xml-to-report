@@ -16,6 +16,8 @@ def executar_tool(
         "--format", formato,
     ]
     try:
-        return subprocess.run(cmd, capture_output=True, text=True, timeout=120).returncode
+        return subprocess.run(
+            cmd, check=False, capture_output=True, text=True, timeout=120
+        ).returncode
     except (OSError, subprocess.SubprocessError):
         return 3
