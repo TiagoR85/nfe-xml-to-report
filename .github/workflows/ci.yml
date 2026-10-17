@@ -34,7 +34,7 @@ jobs:
         run: dotnet pack tool/NfeReportTool/NfeReportTool.csproj -c Release -o nupkg
       - name: Install local tool
         run: |
-          printf '<?xml version="1.0" encoding="utf-8"?>\n<configuration>\n  <packageSources>\n    <clear />\n    <add key="local" value="nupkg" />\n  </packageSources>\n</configuration>\n' > nupkg/nuget.local.config
+          printf '<?xml version="1.0" encoding="utf-8"?>\n<configuration>\n  <packageSources>\n    <clear />\n    <add key="local" value="." />\n  </packageSources>\n</configuration>\n' > nupkg/nuget.local.config
           dotnet tool install --global nfe-report --configfile nupkg/nuget.local.config
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
       - name: Pytest (e2e)
