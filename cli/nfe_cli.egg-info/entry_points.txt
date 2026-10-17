@@ -1,2 +1,0 @@
-[console_scripts]
-nfecli = nfe_cli.main:main
