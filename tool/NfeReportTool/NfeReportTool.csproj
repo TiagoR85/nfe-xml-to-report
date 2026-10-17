@@ -9,4 +9,7 @@
     <PackageId>nfe-report</PackageId>
     <Version>1.0.0</Version>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" />
+  </ItemGroup>
 </Project>
