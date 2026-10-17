@@ -51,8 +51,9 @@ def montar_xml(
 ) -> str:
     cnpj = cnpj_base12 + dv_cnpj(cnpj_base12)
     if cnpj_dv_errado:
-        dv_bom = dv_cnpj(cnpj_base12)[-1]
-        cnpj = cnpj_base12 + ("0" if dv_bom != "0" else "1")
+        dv_ok = dv_cnpj(cnpj_base12)
+        dv_errado = ("0" if dv_ok[0] != "0" else "1") + dv_ok[1]
+        cnpj = cnpj_base12 + dv_errado
     chave_base = f"{cuf}2610{cnpj}55{serie:03d}{nnf:09d}1{cnf:08d}"
     dv = chave_dv_override or dv_modulo11_chave(chave_base)
     chave = chave_base + dv
